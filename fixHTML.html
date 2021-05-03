@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fix HTML</title>
+    <style>
+      #fixed-html {
+        margin: 10px 10px 40px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fix HTML</h1>
+
+    <h2>1. Copy the content from Gather Content and paste it into the box below:</h2>
+    <textarea id="pasted-text" rows="20" cols="100"></textarea>
+    <h2>2. Enter the domain name:</h2>
+    <input type="text" id="domain-name" />
+    <h2>3. Click to strip tags:</h2>
+    <p>This will remove the following tags from the HTML:</p>
+    <ul>
+      <li>&lt;span&gt;&lt;/span&gt;</li>
+      <li>&lt;em&gt;&lt;/em&gt;</li>
+      <li>&lt;u&gt;&lt;/u&gt;</li>
+      <li>&lt;/mark&gt;</li>
+      <li>&lt;br/&gt;</li>
+      <li>empty &lt;p&gt;&lt;/p&gt;</li>
+      <li>inline styles</li>
+      <li>HTML comments and their content (&lt;!-- --&gt;)</li>
+      <li>data-id="null" and title="" from img tags</li>
+      <li>If a domain name is entered, it will remove the https:// + domain from any links.</li>
+    </ul>
+    <button id="fix-html">Fix HTML!</button>
+    <h2>
+      4. Copy and paste the following fixed HTML into a text editor to format and make any further changes:
+    </h2>
+    <div id="fixed-html"></div>
+
+    <script src="fixHTML.js"></script>
+  </body>
+</html>
